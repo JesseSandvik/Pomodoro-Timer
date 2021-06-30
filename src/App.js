@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header container">
-        <h1>Pomodoro Timer</h1>
+        <h1><b>Pom-0 dor-0 Timer</b></h1>
       </header>
       <div className="container">
         <Pomodoro />
