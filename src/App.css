@@ -1,3 +1,74 @@
 .App {
   text-align: center;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  color: #AD343E;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5vh 1rem 0 1rem;
+  text-transform: uppercase;
+  text-shadow: -2px 2px 3px #ffffff;
+}
+
+body {
+  background: url("./images/italy-dusk.jpg");
+  background-position: cover;
+  padding: 5vh 1rem 5vh 1rem;
+}
+
+button {
+  box-shadow: 0 5px 10px #000000;
+}
+
+.col {
+  padding: 5vh 0 2vh;
+}
+
+.input-group {
+  padding: 1rem;
+}
+
+.input-group-text {
+  background: #95818D;
+  border: .2rem outset #8FD694;
+  box-shadow: 0 5px 10px #000000;
+}
+
+.dur-text {
+  color: #ffffff; 
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: .2rem;
+  text-transform: uppercase;
+  text-shadow: -2px 2px 3px #000000;
+}
+
+.about {
+  list-style-type: none;
+}
+
+.about-title {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.about-description {
+  color: #ffffff;
+}
+
+.timer-toggle {
+  color: #ffffff;
+  text-shadow: -2px 2px 3px #AD343E;
+}
+
+.progress-bar {
+  box-shadow: 2px 0 4px #000000;
+}

@@ -1,4 +1,3 @@
-import "./Pomodoro.css";
 import React, { useState } from "react";
 import classNames from "../utils/class-names";
 import useInterval from "../utils/useInterval";
@@ -156,7 +155,7 @@ function Pomodoro() {
         <div className="col">
           <div className="progress" style={{ height: "20px" }}>
             <div
-              className="progress-bar"
+              className="progress-bar bg-danger"
               role="progressbar"
               aria-valuemin="0"
               aria-valuemax="100"
@@ -184,16 +183,18 @@ function Pomodoro() {
               {/* TODO: Implement decreasing focus duration and disable during a focus or break session */}
               <button onClick = {handleFocusDurationDecrease}
                 type="button"
-                className="btn btn-secondary"
+                className="btn btn-danger"
                 data-testid="decrease-focus"
+                disabled={isTimerRunning === true ? true : false}
               >
                 <span className="oi oi-minus" />
               </button>
               {/* TODO: Implement increasing focus duration  and disable during a focus or break session */}
               <button onClick = {handleFocusDurationIncrease}
                 type="button"
-                className="btn btn-secondary"
+                className="btn btn-success"
                 data-testid="increase-focus"
+                disabled={isTimerRunning === true ? true : false}
               >
                 <span className="oi oi-plus" />
               </button>
@@ -211,16 +212,18 @@ function Pomodoro() {
                 {/* TODO: Implement decreasing break duration and disable during a focus or break session*/}
                 <button onClick = {handleBreakDurationDecrease}
                   type="button"
-                  className="btn btn-secondary"
+                  className="btn btn-danger"
                   data-testid="decrease-break"
+                  disabled={isTimerRunning === true ? true : false}
                 >
                   <span className="oi oi-minus" />
                 </button>
                 {/* TODO: Implement increasing break duration and disable during a focus or break session*/}
                 <button onClick = {handleBreakDurationIncrease}
                   type="button"
-                  className="btn btn-secondary"
+                  className="btn btn-success"
                   data-testid="increase-break"
+                  disabled={isTimerRunning === true ? true : false}
                 >
                   <span className="oi oi-plus" />
                 </button>
@@ -238,7 +241,7 @@ function Pomodoro() {
           >
             <button
               type="button"
-              className="btn btn-primary"
+              className="btn btn-success"
               data-testid="play-pause"
               title="Start or pause timer"
               onClick={playPause}
@@ -255,7 +258,7 @@ function Pomodoro() {
             {/* TODO: Disable the stop button when there is no active session */}
             <button
               type="button"
-              className="btn btn-secondary"
+              className="btn btn-danger"
               data-testid="stop"
               title="Stop the session"
               onClick = {stop}
