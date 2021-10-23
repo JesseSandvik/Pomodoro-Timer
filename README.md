@@ -7,6 +7,10 @@ The pomodoro technique time management system was developed by Francesco Cirillo
 The technique uses a timer to break work into intervals, traditionally twenty five minutes in length, separated by short breaks.
 Each interval is known as a pomodoro, from the italian word for 'tomato', after the tomato-shaped kitchen timer that Cirillo used as a university student.
 
+![Pomodoro Timer](https://i.imgur.com/xVbJiLk.png)
+
+![Pomodoro Timer Active](https://i.imgur.com/kBEPcuU.png)
+
 ## Installation
 Fork & clone the repository. |
 ---------------------------- |
