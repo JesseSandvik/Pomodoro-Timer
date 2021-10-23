@@ -15,7 +15,8 @@ npm install                  |
 npm start                    |
 
 ## Usage
-Both the 'Focus Duration' and the 'Break Duration' can be adjusted. The 'Focus Duration' can be set in increments of 5, whereas the 'Break Duration' can be set in increments of 1.
+
+The 'Focus Duration' and the 'Break Duration' can both be adjusted. The 'Focus Duration' can be set in increments of 5, whereas the 'Break Duration' can be set in increments of 1.
 
 The Start button will begin the timer, and a progress bar, along with the time remaining, will display. When the timer has completed, an audible alert will sound to notify you that it time for break. The timer will automatically restart after the 'Focus Duration' and 'Break Duration' have completed.
 
