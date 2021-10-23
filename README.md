@@ -28,7 +28,7 @@ The timer can be paused or stopped at any point.
 
 ## Build Notes
 
-This application was developed using JavaScript, HTML, CSS, Bootstrap, and React. It was tested locally using Node.js.
+This application was developed using React, JavaScript, HTML, CSS for styling, & Jest/React Testing Library for testing.
 
 ## Contributions
 This application was originally built as part of the curriculum from my time in the full-stack engineering program at [Thinkful](https://www.thinkful.com/).
